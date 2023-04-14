@@ -11,7 +11,6 @@
     "format": "prettier --write --cache .",
     "dev": "vite",
     "build": "npm run type-check && vite build -m prod ",
-    "build-github": "npm run type-check && vite build -m prod --base=/meadmin-template/",
     "type-check": "node --loader ts-node/esm ./cli/autoImport.ts  && vue-tsc --noEmit",
     "preview": "vite preview",
     "release-main": "release-it -c .release-it-main.json",
